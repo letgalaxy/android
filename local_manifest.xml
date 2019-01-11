@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-  <project name="LineageOS/android_device_oppo_common" path="device/oppo/common" />
+  <!-- Device specific repos -->
   <project name="YumeMichi/device_oneplus_onyx" path="device/oneplus/onyx" revision="lineage-16.0-sultan" />
   <project name="YumeMichi/kernel_oneplus_onyx" path="kernel/oneplus/onyx" />
   <project name="letgalaxy/vendor_oneplus_onyx" path="vendor/oneplus/onyx" />
+
+  <!-- Additional LineageOS repos -->
+  <project name="LineageOS/android_device_oppo_common" path="device/oppo/common" />
+  <project name="LineageOS/android_external_sony_boringssl-compat" path="external/sony/boringssl-compat" />
+  <project name="LineageOS/android_packages_resources_devicesettings" path="packages/resources/devicesettings" />
 </manifest>
