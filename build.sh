@@ -1,14 +1,14 @@
 #!/bin/bash
+
 WORK_DIR=lineage
-LINEAGE_BUILD=onyx
+PRODUCT=onyx
+UPLOAD_DIR=/mnt/c/Users/bhaak/OneDrive/Android/
 export USE_CCACHE=1
 
 cd $WORK_DIR
 repo sync --force-sync -q
 source build/envsetup.sh
 
-breakfast $LINEAGE_BUILD
 ccache -M 48G
-mka bacon
-
-cp $OUT/lineage-* /mnt/c/Users/bhaak/OneDrive/Android
+brunch $PRODUCT
+mv $OUT/lineage-* $UPLOAD_DIR
