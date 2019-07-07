@@ -12,3 +12,5 @@ source build/envsetup.sh
 
 ccache -M $C_SIZE
 brunch $1
+
+mv $OUT/lineage-* /mnt/c/Users/bhaak/OneDrive/Android/
